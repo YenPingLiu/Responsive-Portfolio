@@ -11,6 +11,7 @@
 html, body {
     height: 100vh;
     margin: 0;
+    transition: all 0.5s ease;
 }
 
 body {
@@ -144,7 +145,7 @@ input[type=text], select, textarea {
 }
 
 input[type=submit] {
-    width: 10%;
+    width: 90px;
     background-color: #4AAAA5;
     color: white;
     padding: 14px 20px;
@@ -186,4 +187,55 @@ input[type=submit]:hover {
     content: "";
     display: table;
     clear: both;
+}
+
+@media screen and (max-width: 980px) {
+    .mainbox {
+        margin: 0;
+        max-width: 600px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .mainbox {
+        margin: 0;
+        max-width: 600px;
+    }
+
+    .topbar {
+        max-width: 80%;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+    .mainbox {
+        margin: 0;
+        max-width: 600px;
+    }
+
+    /* header {
+        position: static;
+    } */
+
+    .myname {
+        width: 100%;
+    }
+
+    .topbar {
+        max-width: none;
+    }
+
+    .heading-links {
+        float: none;
+        width: 90%;
+        margin: auto;
+        border: 2px solid black;
+    }
+
+    .portflex {
+        width: 400px;
+    }
+
 }
